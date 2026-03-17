@@ -4,6 +4,7 @@
   "description": "Hier Sind die PDF Prozesse der Vorlesung",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Excel.Activities": "[3.4.1]",
     "UiPath.Mail.Activities": "[2.7.10]",
     "UiPath.PDF.Activities": "[4.0.0-preview]",
     "UiPath.System.Activities": "[26.2.1]",

@@ -104,7 +104,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="730,949.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="730,604.5" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="sPdfOut" />
     </Sequence.Variables>
@@ -147,32 +147,49 @@
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
     <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" FileName="PdtOutput.txt" sap:VirtualizedContainerService.HintSize="450,176.5" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[sPdfOut]" />
-    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" Email="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Action="Forward" AttachmentInputMode="FilePaths" Body="&quot;Na du Nudel,&quot;+ Environment.NewLine+ Environment.NewLine+ &quot;Gönn dir diesen Scheiß man!&quot;" ConnectionId="e6372c67-50e8-4324-920e-2c6b42ded94b" ConnectionMode="IntegrationService" DisplayName="Send SMTP Email" EnableSSL="True" sap:VirtualizedContainerService.HintSize="450,393" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" SecureConnection="Auto" Subject="PDF UIPATH Output" To="domenikwilhelm@icloud.com" UseISConnection="True" UseRichTextEditor="True">
-      <ui:SendMail.AttachmentsBackup>
-        <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="FilePaths">
-          <usau:BackupSlot.BackupValues>
-            <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
-              <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)">["PdfOutput.txt"]</InArgument>
-            </scg:List>
-            <scg:List x:TypeArguments="x:Object" x:Key="FilePaths" Capacity="2">
-              <InArgument x:TypeArguments="scg:IEnumerable(x:String)">["PdtOutput.txt"]</InArgument>
-              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
-            </scg:List>
-          </usau:BackupSlot.BackupValues>
-        </usau:BackupSlot>
-      </ui:SendMail.AttachmentsBackup>
-      <ui:SendMail.ConnectionDetailsBackupSlot>
-        <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="IntegrationService">
-          <usau:BackupSlot.BackupValues>
-            <scg:Dictionary x:TypeArguments="umae:ConnectionDetails, scg:List(x:Object)" />
-          </usau:BackupSlot.BackupValues>
-        </usau:BackupSlot>
-      </ui:SendMail.ConnectionDetailsBackupSlot>
-      <ui:SendMail.Files>
-        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-          <InArgument x:TypeArguments="x:String">PdtOutput.txt</InArgument>
-        </scg:List>
-      </ui:SendMail.Files>
-    </ui:SendMail>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignorierte Aktivitäten" sap:VirtualizedContainerService.HintSize="450,453" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" Email="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Action="Forward" AttachmentInputMode="FilePaths" Body="&quot;Na du Nudel,&quot;+ Environment.NewLine+ Environment.NewLine+ &quot;Gönn dir diesen Scheiß man!&quot;" ConnectionId="e6372c67-50e8-4324-920e-2c6b42ded94b" ConnectionMode="IntegrationService" DisplayName="Send SMTP Email" EnableSSL="True" sap:VirtualizedContainerService.HintSize="416,393" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" SecureConnection="Auto" Subject="PDF UIPATH Output" To="xmail@icloud.com" UseISConnection="True" UseRichTextEditor="True">
+            <ui:SendMail.AttachmentsBackup>
+              <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="FilePaths">
+                <usau:BackupSlot.BackupValues>
+                  <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
+                    <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)">["PdfOutput.txt"]</InArgument>
+                  </scg:List>
+                  <scg:List x:TypeArguments="x:Object" x:Key="FilePaths" Capacity="2">
+                    <InArgument x:TypeArguments="scg:IEnumerable(x:String)">["PdtOutput.txt"]</InArgument>
+                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                  </scg:List>
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </ui:SendMail.AttachmentsBackup>
+            <ui:SendMail.ConnectionDetailsBackupSlot>
+              <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="IntegrationService">
+                <usau:BackupSlot.BackupValues>
+                  <scg:Dictionary x:TypeArguments="umae:ConnectionDetails, scg:List(x:Object)" />
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </ui:SendMail.ConnectionDetailsBackupSlot>
+            <ui:SendMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                <InArgument x:TypeArguments="x:String">PdtOutput.txt</InArgument>
+              </scg:List>
+            </ui:SendMail.Files>
+          </ui:SendMail>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
   </Sequence>
 </Activity>
