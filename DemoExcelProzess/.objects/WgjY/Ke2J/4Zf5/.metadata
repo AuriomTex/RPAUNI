@@ -1,0 +1,13 @@
+﻿{
+  "Name": "message.txt – Notepad",
+  "Type": "Screen",
+  "Id": "4Zf5S5nkJUKPhqJXFGPF7A",
+  "Reference": "asHshTMe8ECnoIbxODxbQA/4Zf5S5nkJUKPhqJXFGPF7A",
+  "ParentRef": "asHshTMe8ECnoIbxODxbQA/Ke2JFs-fzkG0eqav18twUg",
+  "Created": "2026-03-13T12:24:44.3333729Z",
+  "Updated": "2026-03-13T12:24:44.3333729Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

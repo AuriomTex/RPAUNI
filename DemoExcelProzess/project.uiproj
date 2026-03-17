@@ -1,0 +1,6 @@
+{
+  "Name": "DemoExcelProzess",
+  "ProjectType": "Process",
+  "Description": "Erster Excel Automatisierungsprozess",
+  "MainFile": "Siilly Test Main.xaml"
+}

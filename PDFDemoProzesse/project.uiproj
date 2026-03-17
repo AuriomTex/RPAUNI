@@ -1,0 +1,6 @@
+{
+  "Name": "PDFDemoProzesse",
+  "ProjectType": "Process",
+  "Description": "Hier Sind die PDF Prozesse der Vorlesung",
+  "MainFile": "Main.xaml"
+}

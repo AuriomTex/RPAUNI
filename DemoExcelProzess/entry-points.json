@@ -1,0 +1,10 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "Siilly Test Main.xaml",
+      "uniqueId": "1120fbce-a4d0-4f87-9ce1-147044ac538f",
+      "type": "process"
+    }
+  ]
+}

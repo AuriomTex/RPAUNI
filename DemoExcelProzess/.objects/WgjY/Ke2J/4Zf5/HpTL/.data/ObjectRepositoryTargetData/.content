@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="a4eEMJPCI0-vZwud4n6yJw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="12, 0, 2472, 1248" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='message.txt – Notepad' role='client' /&gt;" Guid="7e505d8f-2643-4dd0-86ce-6e4c38d89bd1" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='message.txt – Notepad' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="24af964065317a4a8ce5818d35b2d5ab.jpg" xmlns="">0pEwKoTvF8EK_CMuTnxZYMQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
